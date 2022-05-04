@@ -3,7 +3,7 @@ import sys
 import random
 
 argumentsList = sys.argv
-hostAddress = '10.80.4.132'
+hostAddress = '10.80.4.233'
 hostPort = '12345'
 
 URI = "http://" + hostAddress + ":" + hostPort
