@@ -17,11 +17,12 @@ password = int(input("Password: "))
 proxy = xmlrpc.client.ServerProxy(URI)
 
 # Input Zahlen
-num1 = int(input("Zahl 1: "))
-num2 = int(input("Zahl 2: "))
+num1 = float(input("Number 1: "))
+operator = input("Operator: ")
+num2 = float(input("Number 2: "))
 
 # Ausgabe Login
-print('{}'.format(proxy.test(username, password, num1, num2)))
+print('{}'.format(proxy.network(username, password, num1, operator, num2)))
 
 
 # Ausgabe Berechnungen
