@@ -77,6 +77,13 @@ def calculator4a(x, y):
         return "You cannot divide 0"
 
 
+def buchhalter():
+
+    with open('log.txt', 'w') as f:
+        f.write("ersatz")
+    return ""
+
+
 def network(x, y, d, o, c):
 
     username = "Timi"
