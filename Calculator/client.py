@@ -2,6 +2,7 @@ import xmlrpc.client
 import sys
 
 
+# Informationen
 argumentsList = sys.argv
 hostAddress = '10.80.4.215'
 hostPort = '12345'
@@ -16,21 +17,13 @@ password = int(input("Password: "))
 # Verbindung zum Server
 proxy = xmlrpc.client.ServerProxy(URI)
 
+
 # Input Zahlen
 num1 = float(input("Number 1: "))
 operator = input("Operator: ")
 num2 = float(input("Number 2: "))
 
+
 # Ausgabe Login
 print('{}'.format(proxy.network(username, password, num1, operator, num2)))
-
-
-# Ausgabe Berechnungen
-"""
-print('{} + {} is {}'.format(num1, num2, proxy.addition(num1, num2)))
-print('{} - {} is {}'.format(num1, num2, proxy.subtraction(num1, num2)))
-print('{} * {} is {}'.format(num1, num2, proxy.multiplication(num1, num2)))
-print('{} / {} is {}'.format(num1, num2, proxy.division(num1, num2)))
-"""
-
 print(URI)
