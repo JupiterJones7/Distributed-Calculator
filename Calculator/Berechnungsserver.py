@@ -2,12 +2,13 @@ import sys
 from xmlrpc.server import SimpleXMLRPCServer
 
 
+
 # Informationen
+
 argumentList = sys.argv
-hostAddress = '10.80.4.215'
+hostAddress = '0.0.0.0'
 port = '12345'
 server = SimpleXMLRPCServer((hostAddress, int(port)))
-
 
 # coordinator
 def spooler(x, o, y):

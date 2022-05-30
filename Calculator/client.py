@@ -4,7 +4,7 @@ import sys
 
 # Informationen
 argumentsList = sys.argv
-hostAddress = '10.80.4.215'
+hostAddress = '127.0.0.1'
 hostPort = '12345'
 URI = "http://" + hostAddress + ":" + hostPort
 
